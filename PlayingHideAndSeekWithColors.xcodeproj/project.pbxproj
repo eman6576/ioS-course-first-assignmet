@@ -12,6 +12,9 @@
 		88DB8FB31C49EC420004D00B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DB8FB11C49EC420004D00B /* Main.storyboard */; };
 		88DB8FB51C49EC420004D00B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88DB8FB41C49EC420004D00B /* Assets.xcassets */; };
 		88DB8FB81C49EC420004D00B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DB8FB61C49EC420004D00B /* LaunchScreen.storyboard */; };
+		88DB8FCA1C49FCEE0004D00B /* corkbackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88DB8FC91C49FCEE0004D00B /* corkbackground.jpg */; };
+		88DB8FCC1C49FD8A0004D00B /* redcircle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88DB8FCB1C49FD8A0004D00B /* redcircle.jpg */; };
+		88DB8FCE1C49FDCA0004D00B /* bluecircle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88DB8FCD1C49FDCA0004D00B /* bluecircle.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		88DB8FB41C49EC420004D00B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88DB8FB71C49EC420004D00B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88DB8FB91C49EC420004D00B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88DB8FC91C49FCEE0004D00B /* corkbackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = corkbackground.jpg; path = "../../../../Downloads/Cardboard-texture/corkbackground.jpg"; sourceTree = "<group>"; };
+		88DB8FCB1C49FD8A0004D00B /* redcircle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = redcircle.jpg; path = ../../../../Downloads/redcircle.jpg; sourceTree = "<group>"; };
+		88DB8FCD1C49FDCA0004D00B /* bluecircle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bluecircle.jpg; path = ../../../../Downloads/bluecircle.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				88DB8FAD1C49EC420004D00B /* AppDelegate.swift */,
 				88DB8FAF1C49EC420004D00B /* ViewController.swift */,
 				88DB8FB11C49EC420004D00B /* Main.storyboard */,
+				88DB8FC91C49FCEE0004D00B /* corkbackground.jpg */,
+				88DB8FCB1C49FD8A0004D00B /* redcircle.jpg */,
+				88DB8FCD1C49FDCA0004D00B /* bluecircle.jpg */,
 				88DB8FB41C49EC420004D00B /* Assets.xcassets */,
 				88DB8FB61C49EC420004D00B /* LaunchScreen.storyboard */,
 				88DB8FB91C49EC420004D00B /* Info.plist */,
@@ -122,9 +131,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DB8FCA1C49FCEE0004D00B /* corkbackground.jpg in Resources */,
 				88DB8FB81C49EC420004D00B /* LaunchScreen.storyboard in Resources */,
 				88DB8FB51C49EC420004D00B /* Assets.xcassets in Resources */,
 				88DB8FB31C49EC420004D00B /* Main.storyboard in Resources */,
+				88DB8FCC1C49FD8A0004D00B /* redcircle.jpg in Resources */,
+				88DB8FCE1C49FDCA0004D00B /* bluecircle.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +263,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.projectomicron.PlayingHideAndSeekWithColors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -262,6 +275,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.projectomicron.PlayingHideAndSeekWithColors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

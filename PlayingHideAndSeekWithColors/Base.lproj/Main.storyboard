@@ -1,25 +1,68 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlayingHideAndSeekWithColors" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="corkbackground.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kQJ-1F-NCv">
+                                <rect key="frame" x="-204" y="-86" width="1037" height="855"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="redcircle.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6RI-Sd-jSV">
+                                <rect key="frame" x="20" y="84" width="108" height="191"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bluecircle.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2LU-s8-3Xx">
+                                <rect key="frame" x="237" y="123" width="118" height="113"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XW9-EA-XlW">
+                                <rect key="frame" x="117" y="367" width="140" height="30"/>
+                                <state key="normal" title="Hide Red Circle">
+                                    <color key="titleColor" red="1" green="0.2261612029" blue="0.34719085760000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hideRedCircleImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ycw-nR-Kq3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pd-k3-7Yk">
+                                <rect key="frame" x="122" y="456" width="131" height="30"/>
+                                <state key="normal" title="Hide Blue Circle">
+                                    <color key="titleColor" red="0.1117269033" green="0.1683924665" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hideBlueCircleImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eip-Mc-EG5"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="blueCircleButton" destination="2pd-k3-7Yk" id="6xl-4C-kMl"/>
+                        <outlet property="blueCircleImage" destination="2LU-s8-3Xx" id="a1j-T6-TLh"/>
+                        <outlet property="redCircleButton" destination="XW9-EA-XlW" id="Hqj-Uy-2qM"/>
+                        <outlet property="redCircleImage" destination="6RI-Sd-jSV" id="kI9-rK-q8E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="324.5" y="353.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bluecircle.jpg" width="1300" height="1382"/>
+        <image name="corkbackground.jpg" width="1667" height="1667"/>
+        <image name="redcircle.jpg" width="500" height="500"/>
+    </resources>
 </document>
